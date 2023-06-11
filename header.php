@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_save_path('/session');
 // Store the previous page URL in a session variable if it is not the login page
 if (!isset($_SESSION['previous_page']) && basename($_SERVER['PHP_SELF']) !== 'login.php') {
     $_SESSION['previous_page'] = $_SERVER['PHP_SELF'];
