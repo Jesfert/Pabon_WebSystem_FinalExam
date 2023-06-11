@@ -1,5 +1,28 @@
 <?php
 session_start();
+// Store the previous page URL in a session variable if it is not the login page
+if (!isset($_SESSION['previous_page']) && basename($_SERVER['PHP_SELF']) !== 'login.php') {
+    $_SESSION['previous_page'] = $_SERVER['PHP_SELF'];
+}
+// Check if the user has submitted the login form
+if (isset($_POST['login']) && $_POST['login'] == 1) {
+    // Perform your authentication logic here
+    $username = $_POST['username']; // Assuming the username is submitted via a form field
+    // Validate the username and password, and perform any necessary checks
+    
+    // If the authentication is successful, store the username in a session variable
+    $_SESSION['username'] = $username;
+    
+    // Redirect the user to the previous page if available
+    if (isset($_SESSION['previous_page'])) {
+        $previousPage = $_SESSION['previous_page'];
+        header("Location: $previousPage");
+    } else {
+        // Redirect the user to a default page if the previous page is not available
+        header("Location: index.php");
+    }
+    exit;
+}
 
 // Check if the user is already logged in
 if (isset($_SESSION['username'])) {
