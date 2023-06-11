@@ -1,0 +1,409 @@
+
+
+.sort_by.container{
+    height: 210px;
+    margin-top:22px;
+}
+.sort_by_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sort_by_header_container span {
+    order: 1; /* Move the span to the left */
+  }
+  
+  .sort_by_header_container i {
+    order: 2; /* Move the icon to the right */
+    left: 5px;
+    position: relative;
+  }
+  
+.sort_by.container .sort_by_header_container span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.12em;
+    color: #231F20;
+    text-transform: uppercase;
+}
+.sorting_list {
+    height: 170px;
+    overflow: auto;
+    margin-top:17px;
+}
+.sorting_list ul{
+    padding:0;
+}
+.sorting_list ul li {
+    margin-top:5px;
+    margin-bottom:18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #231F20;
+    width:227px;
+    display: flex;
+    align-items: center;
+}
+.sorting_list ul li label{
+    margin:0;
+}
+.sorting_list ul li a{
+    margin:0;
+}
+.sorting_list ul li input{
+    margin-right:10px;
+}
+.sorting_list ul li a > *{
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    background-color: #E9E9E9;
+    border-radius: 0px;
+    position: relative;
+  }
+
+.sorting_list::-webkit-scrollbar{
+    width: 6px;
+}
+.sorting_list::-webkit-scrollbar-track {
+    background: #E9E9E9;        /* color of the tracking area */
+}
+  
+.sorting_list::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 6px;       /* roundness of the scroll thumb */
+  border: 3px solid blue;  /* creates padding around scroll thumb */
+}
+
+.star-rating-filter {
+    display: inline-block;
+  }
+  
+  .star {
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+  .star span {
+    letter-spacing: 1px;
+  }
+  
+ .star-rating-filter input[type="checkbox"] {
+    display: none;
+  }
+  
+ .star-rating-filter input[type="checkbox"]:checked + label span,
+ .star-rating-filter input[type="checkbox"]:hover + label span{
+    color: blue;
+  }
+  .sort_by_rating.sort_by_rating{
+    height:141px;
+  }
+  .sort_by.container.age_and_gender{
+    height:165px;
+  }
+  .sort_by.container.promo{
+    height:97px;
+  }
+  .sort_pagination{
+    margin-top:69px;
+  }
+  .sort_pagination span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #231F20;
+    letter-spacing: 0.5px;
+  }
+  hr.sort_hr{
+    margin-top:34px;
+    height:0px;
+    opacity: 0.1;
+    border: 1px solid #231F20;
+    margin-bottom: 0px;
+  }
+  #toggleBtn{
+    display: none;
+  }
+  .transparent-button {
+    background-color: transparent;
+    border: none;
+    color:black;
+    font-size: 23px;
+}
+  
+.sort_fields_col {
+  display: block;
+  position: static;
+  z-index: initial;
+}
+  @media (max-width: 1399px){
+    .sorting_list ul li{
+        width:unset;
+    }
+    
+    .helmets_lists_col .container .row{
+        width: 100%;
+    }
+    .product_card > * {
+        width:unset !important;
+    }
+    .helmet_list_container .product_card_container {
+        height: fit-content;
+        margin: 0;
+        display: unset;
+        align-content: unset;
+        flex-wrap: unset;
+        justify-content: unset;    
+        max-width: 23%;
+        margin-right: 12px;
+    }
+  }
+  .overlay_helmet {
+    display: none;
+  }
+  @media (max-width: 1267px) and (min-width: 1024px) {
+    .helmet_products .product_card_row .sale, .helmet_products .product_card_row .staff-pick , .helmet_products .product_card_row .new,  .helmet_products .product_card_row .closeout{
+        padding: 10px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+  } 
+  @media (max-width: 1100px) and (min-width: 992px) {
+    .hero-header-container label select{
+        padding: 12px 39px 12px 15px;
+        font-size: 14px;
+    }
+    }
+    @media (max-width: 1024px) and (min-width: 768px) {
+        .helmets_lists_col{
+            width:77%;
+            padding-left:45px;
+            padding-right:45px;
+        }
+    }
+  @media (max-width: 1024px){
+    .helmet_list_container {
+        padding: 0 25px;
+    }
+    .container.helmet_products{
+        width:100%;
+        max-width: 960px;
+    }
+    .helmet_list_container .product_card .helmet-price, .helmet_list_container .product_card .previous_price {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .filter_buttons_container{
+        display:flex;
+        margin:0;
+        margin-top:40px;
+        
+    }
+    .filter_buttons_container button.filterBtn{
+        width:189px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        letter-spacing: 0.12em;
+    }
+    .sort_fields_col {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        transition: transform 0.3s ease-out;
+        transform: translateY(100%);
+        left: -195.5px;
+    }
+    .filter_buttons_container :first-child {
+        margin-right:10px;
+    }
+      
+    .sort_fields_col.active  {
+        background-color: white;
+        height: 4739px;
+        width: 40%;
+        display: block;
+        position: absolute;
+        left: 0px;
+        padding-left: 25px;
+        transform: translateY(0%);
+      }
+    .overlay_helmet.active{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4739px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9;
+        display: block;
+    }
+    .helmets_lists_col{
+        width:unset;
+    }
+    .selectedFilterBtn {
+        margin-top: 10px;
+    }
+    .selectedFilterBtn.clear_all{
+        display:none;
+    }
+  }
+  @media (max-width: 992px){
+    .helmet_list_container .product_card_container {
+      max-width: unset;
+      margin-right: unset;
+     /*width: 182px;*/
+    }
+    .helmet_product_container{
+        margin: auto;
+        width: fit-content;
+    }
+    .helmet_list_container .product_card {
+        border: 1px solid #939598;
+        max-width: 220px;
+        padding-top: 22px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: unset;
+        height: 416px;
+        width: 100%;
+    }
+    
+  }
+  @media (max-width: 768px) and (min-width: 576px) {
+    .helmet_product_container{
+        margin: auto;
+        width: 95%;
+    }
+    .helmet_list_container .product_card {
+        width: 100%;
+    }
+    }
+  @media (max-width: 768px){
+    .helmets_lists_col {
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .hero-header-container, .helmet_list_container{
+        padding: 0 20px;
+        margin: 0px;
+    }
+    .hero-header-container div{
+        padding:0;
+        margin:0;
+    }
+    .helmets_lists_col .filterContainer{
+        flex-wrap: wrap;
+    }
+    .selectedFilterBtn {
+        padding: 0px 10px 5px 10px;
+    }
+    .selectedFilterBtn span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sort_fields_col.active, .overlay_helmet.active  {
+        height: 4793.5px;
+      }
+  }
+  @media (max-width: 576px){
+    .hero-header .hero-header-container .sort_filter_form > div{
+        width:100%;
+    }
+    .hero-header .hero-header-container .sort_filter_form div .sort_form_container{
+        width:100%;
+    }
+    .hero-header .hero-header-container .sort_filter_form div .sort_form_container div{
+        width:50%;
+    }
+    .hero-header .hero-header-container .sort_filter_form div .sort_form_container div label{
+        width:100%;
+    }
+    .hero-header .hero-header-container .sort_filter_form div .sort_form_container .sort_by_col{
+        margin-right: 5px;
+    }
+    .hero-header .hero-header-container .sort_filter_form div .sort_form_container .per_page_col{
+        margin-left: 5px;
+    }
+    .sort_fields_col.active, .sort_fields_col {
+        width: 50%;
+    }
+  }
+  @media (max-width: 480px){
+    .hero-header-container .hero-text-container .hero_title h1 {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.08em;
+    }
+    .hero-header .hero-header-container .sort_filter_form{
+        flex-direction: column;
+    }
+    .hero-header .hero-header-container .sort_filter_form > *{
+        margin-bottom: 10px;
+    }
+    .hero-header-container label select {
+        padding: 10px 10px 10px 10px;
+        font-size: 3.5vw;
+    }
+    .selectedFilterBtn {
+        padding: 5px 10px;
+    }
+    .helmets_lists_col .filterContainer {
+        justify-content: space-between;
+    }
+    .helmet_product_container{
+        margin: auto;
+        width: 95%;
+    }
+    .helmet_list_container .product_card {
+        width: 100%;
+        height: unset;
+    }
+    .sort_fields_col.active, .sort_fields_col {
+        width: 70%;
+    }
+    .paginationContainer .paginationNumbers {
+        margin-left: 6px;
+        margin-right: 8px;
+    }
+    .paginationContainer .paginationNumbers span {
+        margin: 0 1px;
+    }
+    .paginationContainer {
+       padding:0;
+       margin:0;
+    }
+  }
+  
+  @media (max-width: 420px){
+    .helmet_list_container .product_card .helmet-name {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    .helmet_list_container .product_card .helmet-price, .helmet_list_container .product_card .previous_price {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .strikethrough::before {
+        width: 15vw;
+    }
+    .hero-header-container label select {
+        padding: 10px 10px 10px 10px;
+        font-size: 3.5vw;
+        background-position-x: 110%; 
+        background-size: 25%;
+    }
+}
+
+
+  
