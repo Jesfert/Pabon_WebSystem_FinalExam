@@ -1,11 +1,11 @@
 <?php
-session_start();
+$username = null; 
 
-// Destroy the session and unset all session variables
-session_destroy();
-$_SESSION = array();
+// Clear all cookies
+foreach ($_COOKIE as $cookieName => $cookieValue) {
+    setcookie($cookieName, '', time() - 3600, '/');
+}
 
-// Redirect the user to the login page or any other desired page
 header("Location: index.php");
 exit;
 ?>

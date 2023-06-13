@@ -5,7 +5,14 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   }
-
+.swiper{
+  width:90%;
+}
+.swiper img{
+  border: 3px solid black;
+  padding:20px; 
+  border-radius: 25px;
+}
 header{
     position: fixed;
     width: 100%;
@@ -40,7 +47,7 @@ list-style: none;
 }
 header ul li,header ul li a {
   position: relative;
-  margin: 0 15px;
+  margin: 0;
   text-decoration: none;
   color: black;
   letter-spacing: 2px;
@@ -199,18 +206,19 @@ text-align: left;
  border: 2px solid;
   padding: 15px;
   background-color: white;
-  width: 950px;
-  height: 450px;
+  max-width:950px;
   border-radius: 20px;
 
 }
-
+.image-container img{
+  max-height: 400px;
+  min-height:220px;
+}
 .image-container2{
   
    padding: 10px;
    background-color: white;
-   width: 810px;
-   height: 510px;
+   max-width:fit-content;
    border-radius: 20px;
    display: flex;
         justify-content: center;
@@ -218,9 +226,7 @@ text-align: left;
  
  }
 .text-container{
-
-  width: 700px;
-  height: 250px;
+  max-width:1200px;
   padding: 5px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -306,7 +312,8 @@ background-color:bisque;
   display: flex;
   gap: 30px;
   width: 100%;
-  justify-content: center;
+  justify-content: center;    
+  max-width: 977px;
 }
 .card_category {
   position: relative;
@@ -367,12 +374,6 @@ background-color:bisque;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
 }
 
-.card-container{
-
-width: 900px;
-height: 400px;
-
-}
 
 
 .overlay {

@@ -1,5 +1,10 @@
+<?php include ('header.php');
 
-<?php include ('header.php')?>
+if (isset($_COOKIE['username'])) {
+    $username = $_COOKIE['username'];
+}
+
+?>
 
 <section class="py-4 py-xl-5">
     <div class="container">

@@ -155,28 +155,29 @@
                       <p class="product-price" id="product-price"></p>
                     </div>
                     <?php
-                        if (isset($_SESSION['username'])) {
-                            // User is logged in, display the username
-                            $loggedInUser = $_SESSION['username'];
-                            echo '<p>Username: ' . $loggedInUser . '</p>';
-                            ?>
-                            <div class="checkoutDetails">
-                              <label for="firstName">First Name:</label>
-                              <input type="text" id="firstName"> <br>
-                              <label for="lastName">Last Name:</label>
-                              <input type="text" id="lastName"><br>
-                              <label for="address">Address:</label>
-                              <input type="text" id="address"><br>
-                              <button class="checkout-button" onclick="placeOrder()">Checkout</button>
-                            </div>
+                    if (isset($_COOKIE['username'])) {
+                        // User is logged in, display the username
+                        $loggedInUser = $_COOKIE['username'];
+                        echo '<p>Username: ' . $loggedInUser . '</p>';
+                        ?>
+                        <div class="checkoutDetails">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName"> <br>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName"><br>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address"><br>
+                            <button class="checkout-button" onclick="placeOrder()">Checkout</button>
+                        </div>
                         <?php
-                        } else {
-                            // User is not logged in, display the login link
-                            echo '<p>Login to Checkout</p>';
-                            echo '<a href="login.php" class="btn btn-primary">Login</a>';
-                            echo '<p>You will be redirected to the home page after login</p>';
-                        }
+                    } else {
+                        // User is not logged in, display the login link
+                        echo '<p>Login to Checkout</p>';
+                        echo '<a href="login.php" class="btn btn-primary">Login</a>';
+                        echo '<p>You will be redirected to the home page after login</p>';
+                    }
                     ?>
+
                   </div>
                 </div>
                 

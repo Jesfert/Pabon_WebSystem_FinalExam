@@ -58,6 +58,8 @@
             <p style="text-align: center;">Design by <a href="https://www.instagram.com/jhezpert/">Jhezpert Pabon</a></p>
    <br>
   
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/swiperJS/swiper-bundle.min.js"></script>
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
    <script src="assets/js/script.js"></script>
 </footer>

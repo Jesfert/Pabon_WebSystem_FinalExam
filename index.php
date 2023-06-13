@@ -1,31 +1,60 @@
 <?php include ('header.php')?>
+
 <section class="section1 pt-5 mb-5">
-    <h2>MEN'S APPAREL BOUTIQUE</h2>
-    <div id="slider-container"> 
-        <div class="slider-frame">
-            <div class="slide-images">
-                    <div class="img-container">
-                        <img src="assets/image/slider1.jpg" width="714px" height="476px">
+    <h2 class="mb-2 text-center">MEN'S APPAREL BOUTIQUE</h2>
+    <!-- <div id="slider-container" class="container"> 
+        <div class="row">
+            <div class="col-12">
+                <div id="slider" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/image/slider1.jpg" class="d-block w-100" alt="Slider 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/image/slider2.jpg" class="d-block w-100" alt="Slider 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/image/slider3.jpg" class="d-block w-100" alt="Slider 3">
+                        </div>
                     </div>
-                    <div class="img-container">
-                        <img src="assets/image/slider2.jpg"width="714px" height="476px">
-                    </div>
-                    <div class="img-container">
-                        <img src="assets/image/slider3.jpg"width="714px" height="476px">
-                    </div>
+                </div>
             </div>
         </div>
+    </div> -->
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <img src="assets/image/slider1.jpg" class="d-block w-75" alt="Slider 1">
     </div>
+    <div class="swiper-slide">
+        <img src="assets/image/slider2.jpg" class="d-block w-75" alt="Slider 2">
+    </div>
+    <div class="swiper-slide">
+        <img src="assets/image/slider3.jpg" class="d-block w-75" alt="Slider 3">
+    </div>
+  </div>
+  <!-- If we need pagination -->
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar mt-5"></div>
+</div>
 </section>
+
 
 <section class="section2 py-5" id="section2">
     <div class="image-container">
 
         <table>
             <tr>
-                <th> <img src="assets/image/section2.1.jpg" alt="el nido trip" width="300px" height="400px"></th>
-                <th> <img src="assets/image/section2.jpg" alt="el nido trip" width="300px" height="400px"></th>
-                <th> <img src="assets/image/section2.3.jpg" alt="el nido trip" width="300px" height="400px"></th>
+                <th> <img class="img-fluid" src="assets/image/section2.1.jpg" alt="el nido trip" width="300px" height="400px"></th>
+                <th> <img class="img-fluid"  src="assets/image/section2.jpg" alt="el nido trip" width="300px" height="400px"></th>
+                <th> <img class="img-fluid" src="assets/image/section2.3.jpg" alt="el nido trip" width="300px" height="400px"></th>
                 
             </tr>
 
@@ -55,7 +84,7 @@
 <br>
 <div class="image-container2">
 
-    <img src="assets/image/slides3.jpg" alt="boutique" width="780px" height="480px">
+    <img class="img-fluid" src="assets/image/slides3.jpg" alt="boutique" width="780px" height="480px">
     
 
 </div>

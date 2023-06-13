@@ -1,8 +1,8 @@
 <?php include ('header.php')?>
     <div class="card-container pt-5">
         <section class="hero-section">
-            <div class="card-container">
-              <div class="card card_category">
+            <div class="row card-container">
+              <div class="col-12 col-sm-3 col-md-4 card card_category">
                 <a href="business_casual.php">
                   <div class="card-background" style="background-image: url(assets/image/section2.jpg);"></div>
                   <div class="content">
@@ -11,7 +11,7 @@
                   </div>
                 </a>
               </div>
-              <div class="card card_category">
+              <div class="col-12 col-sm-3 col-md-4 card card_category">
                 <a href="boneless_hoodie.php">
                   <div class="card-background" style="background-image: url(assets/image/hoodie.png);"></div>
                   <div class="content">
@@ -20,7 +20,7 @@
                   </div>
                 </a>
               </div>
-              <div class="card card_category">
+              <div class="col-12 col-sm-3 col-md-4 card card_category">
                 <a href="cream_polo.php">
                   <div class="card-background" style="background-image: url(assets/image/section2.3.jpg);"></div>
                   <div class="content">
@@ -29,21 +29,8 @@
                   </div>
                 </a>
               </div>
-            </div>
-          </section>
-
-    </div>
-<br>
-<br>
-
-
-    <div class="card-container">
-
-
-
-        <section class="hero-section pt-5">
-            <div class="card-container">
-                <div class="card card_category">
+              
+              <div class="col-12 col-sm-3 col-md-4 card card_category">
                   <a href="summer_outfit.php">
                     <div class="card-background" style="background-image: url(assets/image/summer.jpg);"></div>
                     <div class="content">
@@ -52,7 +39,7 @@
                     </div>
                   </a>
                 </div>
-              <div class="card card_category">
+              <div class="col-12 col-sm-3 col-md-4 card card_category">
                 <a href="casual_date.php">
                   <div class="card-background" style="background-image: url(assets/image/date.jpg);"></div>
                   <div class="content">
@@ -61,7 +48,7 @@
                   </div>
                 </a>
               </div>
-              <div class="card card_category">
+              <div class="col-12 col-sm-3 col-md-4 card card_category">
                 <a href="vintage.php">
                   <div class="card-background" style="background-image: url(assets/image/vintage.jpg);"></div>
                   <div class="content">
@@ -71,11 +58,12 @@
                 </a> 
               </div>
             </div>
-           
           </section>
 
-
     </div>
+<br>
+<br>
+
 
 
     <br>
